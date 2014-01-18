@@ -1,0 +1,21 @@
+/* --------------
+ * GLOBAL
+ * -------------*/
+body{
+        font-family: 'PT Sans',Helvetica,serif;
+        font-size: 1.125em;
+        line-height: 1.5em;
+        color: #555;
+        text-align:center; 
+}
+
+#title{
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 1;
+	margin-top: 20px;
+}
+
+pre{
+	margin-top: 20px;
+}

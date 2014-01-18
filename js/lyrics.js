@@ -23,6 +23,7 @@ function loadLyrics(){
 				async: false,
 				data: { artist: data.recenttracks.track[0].artist['#text'], title: data.recenttracks.track[0].name}
 			}).done(function(lyrics){
+				$('#title').html(data.recenttracks.track[0].name + "<br/>by " + data.recenttracks.track[0].artist['#text']);
 				$('#lyrics').html(lyrics);
 			});
 
@@ -37,9 +38,11 @@ function loadLyrics(){
 
 /* Disconnect user */
 function disconnect(){
-	$('#username').html('Username: <input type="text" /><input type="submit" />');
+	$('#username').html('Lastfm username<br/><input type="text" /><br/><input type="submit" />');
+	$('#title').html('');
 	$('#lyrics').html('');
 	username = '';
+	nowPlaying = '';
 	$.removeCookie('username');
 }
 

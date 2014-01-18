@@ -3,21 +3,26 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Lastfm Lyrics</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 	</head>
 
 	<body>
 		<form id="username">
-			Username: <input type="text" />
+			Lastfm username<br/><input type="text" /><br/>
 			<input type="submit" />
 		</form>
+
+		<h1 id="title"></h1>
 		<pre id="lyrics">
 
 		</pre>
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="javascript-last.fm-api/lastfm.api.md5.js"></script>
-	<script src="javascript-last.fm-api/lastfm.api.js"></script>
-	<script src="jquery.cookie.js"></script>
-	<script src="lyrics.js"></script>
+	<script src="js/javascript-last.fm-api/lastfm.api.md5.js"></script>
+	<script src="js/javascript-last.fm-api/lastfm.api.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/lyrics.js"></script>
 	</body>
 </html>
