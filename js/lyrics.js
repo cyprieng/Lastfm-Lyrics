@@ -18,7 +18,7 @@ function loadLyrics(){
 			/* Retrieve lyrics */
 			$.ajax({
 				type: 'GET',
-				url: 'http://api.ntag.fr/lyrics/',
+				url: 'https://api.ntag.fr/lyrics/',
 				contentType: 'text/plain',
 				async: false,
 				data: { artist: data.recenttracks.track[0].artist['#text'], title: data.recenttracks.track[0].name}
